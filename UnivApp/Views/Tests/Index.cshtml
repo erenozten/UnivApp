@@ -1,0 +1,141 @@
+﻿@model IEnumerable<UnivApp.ViewModels.EnrollmentDateGroup>
+<h2>Tests</h2>
+<br />
+
+<style>
+</style>
+@Html.ActionLink("JSON ile Database'e veri eklemek için tıklayınız.", "Create", "Student")
+<br />
+JSON ile Database'deki veriyi getirme işlemi için aşağı ininiz.
+
+<br />
+<br />
+<br />
+
+@*<button type="button" style="color: white; background-color:yellowgreen" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" id="modalId">
+    Launch demo modal
+</button>*@
+
+
+
+<h3>Student Body Statistics</h3>
+
+<table>
+    <tr>
+        <th>
+            Enrollment Date
+        </th>
+        <th>
+            Students
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.EnrollmentDate)
+            </td>
+            <td>
+                @item.StudentCount
+            </td>
+        </tr>
+    }
+</table>
+<br />
+<br />
+
+<div>
+    <div>
+        <input type="text" id="studentIdForInput" value="" />
+        <br />
+        <br />
+        <input class="btn btn-default " type="submit" id="GetStudent" value="Get the Student" />
+    </div>
+    <div>
+        <br />
+        <p>Name : <strong id="studentFirstMidNameId"></strong></p>
+        <p>Last Name : <strong id="studentLastNameId"></strong></p>
+        <p>ID : <strong id="studentID"></strong></p>
+    </div>
+
+    <a id="hrefId" href="empty"> </a>
+    <span id="spanForNotFound"> </span>
+
+
+    <a id="hrefId" href="empty">
+        @*<span>link</span>*@ &nbsp;
+    </a>
+
+    <span id="spanForUserNotFound"></span>
+</div>
+
+
+<style>
+    .btn-primary {
+        color: white;
+        background-color: cornflowerblue;
+        border-color: white;
+    }
+</style>
+
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="exampleModalLabel">Set New Classes for Given Instructor</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <span style="font-weight: bold; text-align: center"></span>
+                Select / Create Instructor <br /><br />
+                <input type="text" id="textBoxForInstructor" value="İhsan Tepe" />
+                <br /><br />
+
+                <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                        Dropdown
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+                    </ul>
+                </div>
+                <br /><br />
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    $(document).ready(function () {
+
+        $("#modalId").click(function () {
+        });
+    });
+
+</script>
+
+
+
+
+<br />
+<br />
+@*<br />
+    <br />*@

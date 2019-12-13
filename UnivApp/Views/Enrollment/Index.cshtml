@@ -1,0 +1,49 @@
+﻿@model PagedList.IPagedList<UnivApp.Models.Enrollment>
+@using PagedList.Mvc
+<h2>Enrollments</h2>
+@Html.Partial("/Views/PartialViews/SearchBoxAndCreateLink.cshtml")
+<table class="table">
+    <tr>
+        <th>
+            Title
+        </th>
+        <th>
+            Full Name
+        </th>
+        <th>
+            Grade
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Course.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Student.FullName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Grade)
+            </td>
+            <td>
+                <span class="btn-group">
+                    @Html.ActionLink("Edit", "Edit", new { id = item.EnrollmentID }, new { @class = "button" })
+                </span> <span class="btn-group">
+                    @Html.ActionLink("Details", "Details", new { id = item.EnrollmentID }, new { @class = "button" })
+                </span> <span class="btn-group">
+                    @Html.ActionLink("Delete", "Delete", new { id = item.EnrollmentID }, new { @class = "button" })
+                </span>
+            </td>
+        </tr>
+    }
+
+</table>
+
+
+Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
+
+@Html.PagedListPager(Model, page => Url.Action("Index", new { page, sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter }))
+

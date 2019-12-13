@@ -1,0 +1,468 @@
+﻿/*/* Bootstrap Overrides Başlangıç --------------------------------------------------- */
+
+
+.form-control:focus {
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.popover {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.i-footer {
+    position: fixed; /* ekranın altında sabit durmasını sağlıyor. Aşağı scroll yapsan da sabit kalır*/
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: yellowgreen;
+    color: white;
+    text-align: center;
+    height: 55px;
+}
+
+.form-control {
+    font-size: 17px;
+    height: 40px;
+    -ms-border-radius: 9px;
+    border-radius: 4px;
+}
+
+    .form-control:hover {
+        border-color: #2196f3;
+        -webkit-box-shadow: none;
+        -ms-box-shadow: none;
+        box-shadow: none;
+    }
+
+
+/* EREN CSS -BAŞLANGIÇ --------------------------------------------------- */
+
+.i-color-black {
+    color: black;
+}
+
+.i-color-white {
+    color: black;
+}
+
+.i-text-align-right {
+    text-align: right;
+}
+
+.i-text-align-left {
+    text-align: left;
+}
+
+.i-font-weight-bold {
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+/* Dikey ortalama - iç içe taglar içinde -Bitiş */
+
+
+.i-display-table {
+    display: table;
+}
+/*parent olan tag'e Display:Table verilir.
+        İçerdeki child'a ise Display:table-cell ve vertical-align:middle verilir'*/
+.i-display-table-cell {
+    display: table-cell;
+}
+
+.i-vertical-align-middle {
+    vertical-align: middle;
+}
+
+/* Dikey ortalama - iç içe taglar içinde -Bitiş */
+
+
+.i-vertical-align-bottom {
+    vertical-align: bottom;
+}
+
+.i-header-h1 {
+    font-size: 35px;
+}
+
+.i-header-h2 {
+    font-size: 30px;
+}
+
+.i-display-inline {
+    display: inline;
+}
+
+.i--smallGrayItalicText {
+    color: gray;
+    font-style: italic;
+    font-size: 14px;
+}
+
+.i-float-right {
+    float: right;
+}
+
+.i-float-left {
+    float: left;
+}
+
+.i-display-inline-block {
+    display: inline-block;
+}
+
+.i-footer {
+    position: fixed; /* ekranın altında sabit durmasını sağlıyor. Aşağı scroll yapsan da sabit kalır*/
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: yellowgreen;
+    color: white;
+    text-align: center;
+    height: 55px;
+}
+
+.i-highlight-text-bold-black {
+    font-weight: bold;
+    color: black;
+}
+
+.i-highlight-text-bold-red {
+    font-weight: bold;
+    color: red;
+}
+
+.i-highlight-text-italic-gray {
+    font-style: italic;
+    color: gray;
+}
+
+.i-highlight-text-italic-black {
+    font-style: italic;
+    color: black;
+}
+
+
+.i-color-black {
+    color: black;
+}
+
+.i-text-align-right {
+    text-align: right;
+}
+
+.i-text-align-left {
+    text-align: left;
+}
+
+.i-font-weight-bold {
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+/* Dikey ortalama - iç içe taglar içinde -Bitiş */
+
+
+.i-display-table {
+    display: table;
+}
+/*parent olan tag'e Display:Table verilir.
+        İçerdeki child'a ise Display:table-cell ve vertical-align:middle verilir'*/
+.i-display-table-cell {
+    display: table-cell;
+}
+
+.i-vertical-align-middle {
+    vertical-align: middle;
+}
+
+/* Dikey ortalama - iç içe taglar içinde -Bitiş */
+
+
+.i-vertical-align-bottom {
+    vertical-align: bottom;
+}
+
+.i-header-h1 {
+    font-size: 35px;
+}
+
+.i-header-h2 {
+    font-size: 30px;
+}
+
+.i-display-inline {
+    display: inline;
+}
+
+.i--smallGrayItalicText {
+    color: gray;
+    font-style: italic;
+    font-size: 14px;
+}
+
+.i-float-right {
+    float: right;
+}
+
+.i-float-left {
+    float: left;
+}
+
+.i-display-inline-block {
+    display: inline-block;
+}
+
+.i-footer {
+    position: fixed; /* ekranın altında sabit durmasını sağlıyor. Aşağı scroll yapsan da sabit kalır*/
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: yellowgreen;
+    color: white;
+    text-align: center;
+    height: 55px;
+}
+
+.i-highlight-text-bold-black {
+    font-weight: bold;
+    color: black;
+}
+
+.i-highlight-text-bold-red {
+    font-weight: bold;
+    color: red;
+}
+
+.i-highlight-text-italic-gray {
+    font-style: italic;
+    color: gray;
+}
+
+.i-highlight-text-italic-black {
+    font-style: italic;
+    color: black;
+}
+
+
+
+.btn {
+    /*font-size: 17px;
+    padding: 7px 20px;*/
+    -ms-border-radius: 9px;
+    border-radius: 9px;
+}
+
+/* Bootstrap Overrides Bitiş --------------------------------------------------- */
+
+/*Green create edit buttons başla*/
+
+.btn-group .button {
+    background-color: yellowgreen;
+    border: 1px solid yellowgreen;
+    color: white;
+    padding: 1px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    float: left;
+}
+
+    .btn-group .button:not(:last-child) {
+        border-right: none;
+    }
+
+    .btn-group .button:hover {
+        background-color: #3e8e41;
+    }
+
+/*Green create edit buttons bitiş*/
+
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+    background-color: yellowgreen;
+    border-color: gray;
+}
+
+a {
+    color: black;
+}
+
+
+
+.shit {
+    background-color: red;
+}
+
+
+
+
+
+
+
+
+.ball {
+    background-color: rgba(230, 0, 0, 0);
+    border: 5px solid rgba(0,183,229,0.9);
+    opacity: .9;
+    border-top: 5px solid rgba(0,0,0,0);
+    border-left: 5px solid rgba(217, 23, 23, 0);
+    border-radius: 50px;
+    box-shadow: 0 0 35px #2187e7;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    -moz-animation: spin .5s infinite linear;
+    -webkit-animation: spin .5s infinite linear;
+}
+
+.ballGreen {
+    background-color: rgba(230, 0, 0, 0);
+    border: 5px solid rgba(52, 251, 67, 0.9);
+    opacity: .9;
+    border-top: 5px solid rgba(0,0,0,0);
+    border-left: 5px solid rgba(217, 23, 23, 0);
+    border-radius: 50px;
+    /*box-shadow: 0 0 35px #32cd32;*/
+    /*width: 42px;
+    height: 42px;*/
+    width: 38px;
+    height: 38px;
+    margin: 0 auto;
+    -moz-animation: spin .5s infinite linear;
+    -webkit-animation: spin .5s infinite linear;
+}
+
+
+.ballGreen1 {
+    background-color: rgba(230, 0, 0, 0);
+    border: 5px solid rgba(52, 251, 67, 0.9);
+    opacity: .9;
+    border-top: 5px solid rgba(0,0,0,0);
+    border-left: 5px solid rgba(217, 23, 23, 0);
+    border-radius: 50px;
+    /*box-shadow: 0 0 35px #32cd32;*/
+    /*width: 42px;
+    height: 42px;*/
+    width: 38px;
+    height: 38px;
+    margin-top: -5px !important;
+    margin: 0 auto;
+    -moz-animation: spin .5s infinite linear;
+    -webkit-animation: spin .5s infinite linear;
+}
+
+.ballGreen1ToTheLeft {
+    margin-left: -61px !important;
+    background-color: rgba(230, 0, 0, 0);
+    border: 5px solid rgba(52, 251, 67, 0.9);
+    opacity: .9;
+    border-top: 5px solid rgba(0,0,0,0);
+    border-left: 5px solid rgba(217, 23, 23, 0);
+    border-radius: 50px;
+    /*box-shadow: 0 0 35px #32cd32;*/
+    /*width: 42px;
+    height: 42px;*/
+    width: 38px;
+    height: 38px;
+    margin-top: -5px !important;
+    margin: 0 auto;
+    -moz-animation: spin .5s infinite linear;
+    -webkit-animation: spin .5s infinite linear;
+}
+
+.ball1 {
+    background-color: rgba(232, 8, 8, 0);
+    border: 5px solid rgb(228, 9, 9);
+    opacity: .9;
+    border-top: 5px solid rgba(0,0,0,0);
+    border-left: 5px solid rgba(0,0,0,0);
+    border-radius: 50px;
+    box-shadow: 0 0 4px #e60505;
+    width: 24px;
+    height: 24px;
+    /*margin: 6px auto;*/
+    margin: 30px 155px;
+    /*position: relative;*/
+    top: -50px;
+    -moz-animation: spinoff .5s infinite linear;
+    -webkit-animation: spinoff .5s infinite linear;
+}
+
+@-moz-keyframes spin {
+    0% {
+        -moz-transform: rotate(0deg);
+    }
+
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes spinoff {
+    0% {
+        -moz-transform: rotate(0deg);
+    }
+
+    100% {
+        -moz-transform: rotate(-360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spinoff {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(-360deg);
+    }
+}   
+
+/*button:disabled,
+button[disabled]{
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
+}*/
+
+
+/*button:disabled,
+button[disabled]{
+     border: 1px solid #999999;
+     background-color: #cccccc;
+     color: red;
+ }
+
+button:disabled{
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: red;
+}
+
+button:disabled{
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: red;
+}*/

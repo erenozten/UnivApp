@@ -1,0 +1,113 @@
+﻿@model UnivApp.Models.Instructor
+
+@{
+    ViewBag.Title = "Details";
+}
+
+@Html.Partial("/Views/PartialViews/HeaderPartialView.cshtml")
+
+<div>
+
+    <hr />
+    <dl class="dl-horizontal">
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FirstMidName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FirstMidName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LastName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.OfficeAssignment.Location)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OfficeAssignment.InstructorID)
+        </dd>
+
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HireDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HireDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Courses)
+        </dt>
+
+        @*<dd>
+            @foreach (var item in Model.Courses)
+            {
+                <span>@item.Title</span>
+            }  (@Html.DisplayFor(model => model.Courses.Count) <span> adet ders bulundu)</span>
+        </dd>*@
+
+        <dd>
+            @{
+                {
+                    int number = 0;
+                    int numberCourseCount = Model.Courses.Count;
+
+                    foreach (var course in Model.Courses)
+                    {
+                        number++;
+                        if (number == 1) /* en başa yazılan text için kullanılıyor */
+                        {
+                            @: Toplam @Html.DisplayFor(model => model.Courses.Count) ders bulundu:
+                        }
+
+                    }
+                }
+            }
+        </dd>
+
+        <dd>
+
+            <br />
+        <dd>
+            <table class="table">
+                <tr>
+                    <th>Course Title</th>
+                    <th>Grade</th>
+                    <th>Credit</th>
+                </tr>
+                @foreach (var item in Model.Courses)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem =>
+                                item.Title)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.CourseCode)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Credits)
+                        </td>
+                    </tr>
+                }
+            </table>
+        </dd>
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+
+@*@foreach (var item in Model.Courses)
+    {
+        <span>@item.Title</span>
+    }*@

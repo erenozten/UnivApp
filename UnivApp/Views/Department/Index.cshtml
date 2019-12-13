@@ -1,0 +1,59 @@
+﻿@using PagedList.Mvc
+@model PagedList.IPagedList<UnivApp.Models.Department>
+
+@{
+    ViewBag.Title = "Departments";
+}
+<h2>Departments</h2>
+@Html.Partial("/Views/PartialViews/SearchBoxAndCreateLink.cshtml")
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.ActionLink("Name", "Index")
+        </th>
+        <th>
+            @Html.ActionLink("Budget", "Index")
+        </th>
+        <th>
+            @Html.ActionLink("Start Date", "Index")
+        </th>
+        <th>
+            Administrator
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Budget)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StartDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Administrator.FullName)
+                @*@Html.DisplayFor(modelItem => item.Administrator.FirstMidName)*@
+            </td>
+            <td>
+                <span class="btn-group">
+                    @Html.ActionLink("Edit", "Edit", new { id = item.DepartmentID }, new { @class = "button" })
+                </span> <span class="btn-group">
+                    @Html.ActionLink("Details", "Details", new { id = item.DepartmentID }, new { @class = "button" })
+                </span> <span class="btn-group">
+                    @Html.ActionLink("Delete", "Delete", new { id = item.DepartmentID }, new { @class = "button" })
+                </span>
+            </td>
+        </tr>
+    }
+</table>
+
+Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
+
+@Html.PagedListPager(Model, page => Url.Action("Index", new { page, sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter }))
+

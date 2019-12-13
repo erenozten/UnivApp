@@ -1,0 +1,185 @@
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\UnivApp.dll.config
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\UnivApp.dll
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\UnivApp.pdb
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\roslyn\csc.exe
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\roslyn\csc.exe.config
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\roslyn\csc.rsp
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\roslyn\csi.exe
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\roslyn\csi.exe.config
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\roslyn\csi.rsp
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\roslyn\System.AppContext.dll
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\roslyn\System.Console.dll
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\roslyn\System.IO.Compression.dll
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\roslyn\System.IO.Pipes.dll
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\roslyn\System.Security.Claims.dll
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\roslyn\System.ValueTuple.dll
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\roslyn\vbc.exe
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\roslyn\vbc.exe.config
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\roslyn\vbc.rsp
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\roslyn\VBCSCompiler.exe
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\Antlr3.Runtime.dll
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\EntityFramework.dll
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\EntityFramework.SqlServer.dll
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\Newtonsoft.Json.dll
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\PagedList.dll
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\PagedList.Mvc.dll
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\System.Web.Helpers.dll
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\System.Web.Mvc.dll
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\System.Web.Optimization.dll
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\System.Web.Razor.dll
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\System.Web.WebPages.dll
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\System.Web.WebPages.Razor.dll
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\WebGrease.dll
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\EntityFramework.xml
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\EntityFramework.SqlServer.xml
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\PagedList.xml
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\PagedList.Mvc.xml
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\System.Web.Helpers.xml
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\System.Web.Mvc.xml
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\System.Web.Optimization.xml
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\System.Web.Razor.xml
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\System.Web.WebPages.xml
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\System.Web.WebPages.Razor.xml
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\Newtonsoft.Json.xml
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\Antlr3.Runtime.pdb
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\obj\Debug\UnivApp.csproj.CopyComplete
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\obj\Debug\UnivApp.dll
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\obj\Debug\UnivApp.pdb
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\obj\Debug\UnivApp.csprojAssemblyReference.cache
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\obj\Debug\UnivApp.csproj.GenerateResource.cache
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\bin\UnivApp.dll.config
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\bin\UnivApp.dll
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\bin\UnivApp.pdb
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\bin\roslyn\csc.exe
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\bin\roslyn\csc.exe.config
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\bin\roslyn\csc.rsp
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\bin\roslyn\csi.exe
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\bin\roslyn\csi.exe.config
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\bin\roslyn\csi.rsp
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\bin\roslyn\Microsoft.Managed.Core.targets
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\bin\roslyn\System.AppContext.dll
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\bin\roslyn\System.Collections.Immutable.dll
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\bin\roslyn\System.Console.dll
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\bin\roslyn\System.IO.Compression.dll
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\bin\roslyn\System.IO.FileSystem.dll
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\bin\roslyn\System.IO.Pipes.dll
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\bin\roslyn\System.Reflection.Metadata.dll
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\bin\roslyn\System.Security.AccessControl.dll
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\bin\roslyn\System.Security.Claims.dll
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\bin\roslyn\System.Security.Principal.Windows.dll
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\bin\roslyn\System.ValueTuple.dll
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\bin\roslyn\System.Xml.XmlDocument.dll
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\bin\roslyn\System.Xml.XPath.dll
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\bin\roslyn\vbc.exe
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\bin\roslyn\vbc.exe.config
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\bin\roslyn\vbc.rsp
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\bin\roslyn\VBCSCompiler.exe
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\bin\roslyn\VBCSCompiler.exe.config
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\bin\Antlr3.Runtime.dll
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\bin\EntityFramework.dll
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\bin\EntityFramework.SqlServer.dll
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\bin\Microsoft.Web.Infrastructure.dll
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\bin\Newtonsoft.Json.dll
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\bin\PagedList.dll
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\bin\PagedList.Mvc.dll
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\bin\System.Diagnostics.DiagnosticSource.dll
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\bin\System.Web.Helpers.dll
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\bin\System.Web.Mvc.dll
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\bin\System.Web.Optimization.dll
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\bin\System.Web.Razor.dll
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\bin\System.Web.WebPages.Deployment.dll
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\bin\System.Web.WebPages.dll
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\bin\System.Web.WebPages.Razor.dll
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\bin\WebGrease.dll
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\bin\EntityFramework.xml
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\bin\EntityFramework.SqlServer.xml
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\bin\PagedList.xml
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\bin\PagedList.Mvc.xml
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\bin\System.Web.Helpers.xml
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\bin\System.Web.Mvc.xml
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\bin\System.Web.Optimization.xml
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\bin\System.Web.Razor.xml
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\bin\System.Web.WebPages.xml
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\bin\System.Web.WebPages.Deployment.xml
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\bin\System.Web.WebPages.Razor.xml
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\bin\Newtonsoft.Json.xml
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\bin\Antlr3.Runtime.pdb
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\bin\System.Diagnostics.DiagnosticSource.xml
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\obj\Debug\UnivApp.csprojAssemblyReference.cache
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\obj\Debug\UnivApp.csproj.CoreCompileInputs.cache
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\obj\Debug\UnivApp.csproj.CopyComplete
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\obj\Debug\UnivApp.dll
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\obj\Debug\UnivApp.pdb
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\obj\Debug\UnivApp.Migrations.X.resources
+D:\C DEN ALINANLAR\source\repos\UnivApp\UnivApp\obj\Debug\UnivApp.csproj.GenerateResource.cache
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\obj\Debug\UnivApp.Migrations.X.resources
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\System.Net.Http.Formatting.dll
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\System.Web.Http.dll
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\System.Web.Http.WebHost.dll
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\System.Net.Http.Formatting.xml
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\System.Web.Http.xml
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\System.Web.Http.WebHost.xml
