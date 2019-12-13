@@ -17,6 +17,7 @@ namespace UnivApp.Controllers
 
         public ActionResult Index(string sortOrder, string currentFilter, string searchString, int? page)
         {
+            //Test
             ViewBag.titleSortBag = sortOrder == "title_desc" ? "title_asc" : "title_desc";
 
             if (searchString != null)
