@@ -25,7 +25,6 @@ namespace UnivApp.Models ////////////////////////////////////incelendi
             get { return CourseCode + " " + Title; }
         }
 
-
         public int DepartmentID { get; set; } //Dersin ait olduğu departmanın ID'si burada tutuluyor. Böylelikle bağlı olunan departmanın hangisi olduğunu bulabiliriz.
         public virtual Department Department { get; set; } //Bir ders, bir departmana ait olabilir.
 
