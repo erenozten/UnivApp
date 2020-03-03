@@ -20,6 +20,7 @@ namespace UnivApp.Controllers
         // GET: Enrollment
         public ActionResult Index(int? page)
         {
+            // enrollment'lara ait olan course'ları ve student'ları eager load yaptık.Eager loading enrollments' courses and students.
             var enrollments = db.Enrollments.Include(e => e.Course).Include(e => e.Student);
             
 
@@ -64,7 +65,10 @@ namespace UnivApp.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Create([Bind(Include = "EnrollmentID,CourseID,StudentID,Grade")] Enrollment enrollment)
+        public async Task<ActionResult> Create([Bind(Include = "EnrollmentID,CourseID,StudentID," +
+                                                               "Grade" +
+                                                               "" +
+                                                               "")] Enrollment enrollment)
         {
             if (ModelState.IsValid)
             {
