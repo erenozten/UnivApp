@@ -183,3 +183,4 @@ C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\System.Web.Http.WebHost.dll
 C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\System.Net.Http.Formatting.xml
 C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\System.Web.Http.xml
 C:\Users\Lord X\source\repos\UnivApp\UnivApp\bin\System.Web.Http.WebHost.xml
+C:\Users\Lord X\source\repos\UnivApp\UnivApp\obj\Debug\UnivApp.csproj.CoreCompileInputs.cache

@@ -90,7 +90,6 @@
         //alert("buton, yeni bir fonksiyon tetikledi (SaveList func) ve fonksiyon başarıyla sonuçlandı");
     });
     //saveListButton bitiş
-
     //alert("document ready FINISH");
     //document ready FINISH
 });

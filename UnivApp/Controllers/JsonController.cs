@@ -167,7 +167,6 @@ namespace UnivApp.Controllers
         {
             if (String.IsNullOrWhiteSpace(instructorNameInActionResult) || String.IsNullOrWhiteSpace(instructorLastNameInActionResult))
             {
-                //throw new Exception("nabıyon aq");
                 return Json(new { message = "İsim veya soyisim boş bırakılamaz.", isNameOrLastNameNull = true });
             }
             try
