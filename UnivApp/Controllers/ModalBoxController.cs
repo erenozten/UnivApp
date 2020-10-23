@@ -32,9 +32,7 @@ namespace UnivApp.Controllers
             ViewBag.Courses = listViewModel;
 
             var instructorList = db.Instructors.ToList();
-
             InstructorDto instructorDto = new InstructorDto();
-
             instructorDto.Instructors = instructorList;
             ViewBag.bag = instructorList;
 

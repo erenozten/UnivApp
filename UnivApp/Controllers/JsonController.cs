@@ -63,7 +63,6 @@ namespace UnivApp.Controllers
             }
         }
 
-
         [HttpPost]
         public JsonResult SaveRadioButtonCoursesJson(string radioButtonCoursesIdListInActionResult, int instructorIdInActionResult)
         {
@@ -116,7 +115,7 @@ namespace UnivApp.Controllers
             {
                 return Json(new { success = false, IsItInteger = true });
             }
-            return Json(new { IsItInteger = false, success = false, ErrorMessage = "My error message" });
+            //return Json(new { IsItInteger = false, success = false, ErrorMessage = "My error message" });
         }
 
         [HttpPost]

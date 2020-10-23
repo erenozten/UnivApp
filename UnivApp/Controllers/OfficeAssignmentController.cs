@@ -36,7 +36,6 @@ namespace UnivApp.Controllers
                 return HttpNotFound();
             }
 
-            //officeAssignment.
             return View(officeAssignment);
         }
 
@@ -48,8 +47,6 @@ namespace UnivApp.Controllers
         }
 
         // POST: OfficeAssignment/Create
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> Create([Bind(Include = "InstructorID,Location")] OfficeAssignment officeAssignment)
@@ -82,8 +79,6 @@ namespace UnivApp.Controllers
         }
 
         // POST: OfficeAssignment/Edit/5
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> Edit([Bind(Include = "InstructorID,Location")] OfficeAssignment officeAssignment)
