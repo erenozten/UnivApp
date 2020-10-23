@@ -1,11 +1,7 @@
 ﻿@model UnivApp.DTO.InstructorDto
 <h2>ModalBox</h2>
-
 <br />
 <br />
-@*<br />
-    <br />*@
-
 <button type="button" style="color: white; background-color:yellowgreen" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" id="modalId">
         Launch demo modal
     </button>
@@ -22,9 +18,7 @@
             </div>
             <div class="modal-body">
                 <span style="font-weight: bold; text-align: center"></span>
-
             </div>
-
             <div class="form-horizontal" id="formHorizontal" hiddenNumber="0">
                 <div class="form-group">
                     <label class="control-label col-md-3">
@@ -47,17 +41,10 @@
                 <div id="divForNewForm"></div>
 
                 <div class="form-group">
-                    <label class="control-label col-md-3">
-
-                    </label>
-                    @*<div class="col-md-6">
-                            <input id="newId" type="submit" value="newVal" class="btn btn-default">
-                        </div>*@
                     <div class="col-md-6">
                         <button id="buttonCreateInstructorWithForm" type="submit" value="buttonCreateInstructorWithForm" class="btn btn-default" style="opacity: 0"> Create </button>
                     </div>
                     <div id="ballgreenForCreateInstructorWithForm" class="col-md-1"></div>
-
                 </div>
 
                 <div class="form-group">
@@ -78,30 +65,13 @@
                                             @*<input type="checkbox" name="selectedCoursesReturnedToAction" id="@course.CourseID" value="@course.CourseID" @(Html.Raw(course.Assigned ? "checked=\"checked\"" : "")) />*@
                                             <input type="checkbox" name="selectedCoursesReturnedToAction" id="@course.CourseID" value="@course.CourseID" ) />
                                             <label for="@course.CourseID"> @course.Title</label>
-
-                                            @*<input type="checkbox" name="selectedCoursesReturnedToAction" id="123" value="123" />
-                                                <label for="123"> 123 </label>*@
-
                                         @:</td>
                                     }
                                 @:</tr>
                                 }
                             </table>
-
                         </div>
                     </div>
-
-                    @*<div class="form-group">
-                            <label class="control-label col-md-3">
-                                1
-                            </label>
-                            <label class="control-label col-md-3">
-                                2
-                            </label>
-                            <input type="checkbox" />Males
-                            <input type="checkbox" />Males
-                            <input type="checkbox" name="selectedCoursesReturnedToAction" />f
-                        </div>*@
 
                     <div class="modal-footer">
                         <div id="ballGreenForSaveRadioButtonCoursesId" class="col-md-1"></div>
@@ -110,7 +80,6 @@
                         <button id="buttonsaveRadioButtonCourses" type="button" class="btn btn btn-success" data-dismiss="">Save</button>
                         <button type="button" class="btn btn-orange" data-dismiss="modal">Cancel</button>
                     </div>
-
 
                 </div> @*form-horizontal*@
             </div> @*modal-content div*@
