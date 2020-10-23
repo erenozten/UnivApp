@@ -25,7 +25,6 @@ namespace UnivApp.Models
             set
             { _enrollmentDate = value; }
         }
-
         public virtual ICollection<Enrollment> Enrollments { get; set; }
     }
 }
