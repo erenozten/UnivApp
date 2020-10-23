@@ -59,6 +59,7 @@
     <div class="container body-content">
         @Styles.Render("~/bundles/css")
         @Styles.Render("~/bundles/cssMine")
+        @Scripts.Render("~/bundles/bootstrap")
         @RenderBody()
         <hr />
         <footer>
@@ -77,7 +78,6 @@
     @RenderSection("scripts", required: false)
 </body>
 
-
 <div class="footer i-footer" style="display:table">
     <div class="i-color-white i-text-align-right i-font-weight-bold
                      i-display-table-cell i-vertical-align"
@@ -89,5 +89,4 @@
         @Url.RequestContext.RouteData.Values["id"] &nbsp &nbsp &nbsp
     </div>
 </div>
-
 </html>
