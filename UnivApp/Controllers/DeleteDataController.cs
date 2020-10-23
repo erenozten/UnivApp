@@ -31,8 +31,5 @@ namespace UnivApp.Controllers
             DeleteData.DeleteInstructors();
             return RedirectToAction("Index", "Home");
         }
-
-        
-
     }
 }

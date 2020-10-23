@@ -30,7 +30,6 @@ namespace UnivApp.Controllers
             }
 
             ViewBag.CurrentFilter = searchString;
-
             var courses = from c in db.Courses
                 select c;
 
@@ -52,9 +51,9 @@ namespace UnivApp.Controllers
                     courses = courses.OrderBy(c => c.Title);
                     break;
             }
+
             int pageSize = 10;
             int pageNumber = (page ?? 1);
-
             var courses2 = db.Courses.ToList();
             return View(courses.ToPagedList(pageNumber, pageSize));
         }
@@ -79,7 +78,6 @@ namespace UnivApp.Controllers
             PopulateDepartmentsDropDownList();
             return View();
         }
-
 
         [HttpPost]
         [ValidateAntiForgeryToken]

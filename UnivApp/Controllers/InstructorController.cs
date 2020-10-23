@@ -18,7 +18,6 @@ namespace UnivApp.Controllers
     {
         private UnivAppContext db = new UnivAppContext();
 
-        // GET: Instructor
         public ActionResult Index(int? id, int? courseID)
         {
             var viewModel = new InstructorIndexData();
@@ -31,7 +30,6 @@ namespace UnivApp.Controllers
             {
                 ViewBag.InstructorID = id.Value;
 
-                // ÖNEMLİ // ÖĞREN 
                 viewModel.Courses = viewModel.Instructors.Where(
                     i => i.ID == id.Value).Single()
                     .Courses;
@@ -68,7 +66,6 @@ namespace UnivApp.Controllers
 
                 //yukarıda Instructor için yaptığımız sorgundaki mantığı kullanarak bunu da kendimiz yazalım:
                 viewModel.Enrollments = viewModel.Courses.Where(x => x.CourseID == courseID).Single().Enrollments;
-                //ggwp
             }
             return View(viewModel);
         }
@@ -81,7 +78,6 @@ namespace UnivApp.Controllers
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
             //Instructor instructor = db.Instructors.Find(id);
-
             var instructor = db.Instructors
                 .Include(i => i.OfficeAssignment)
                 .Include(i => i.Courses)
@@ -131,7 +127,6 @@ namespace UnivApp.Controllers
             return View(instructor);
         }
 
-
         public ActionResult Edit(int? id)
         {
             if (id == null)
@@ -145,12 +140,10 @@ namespace UnivApp.Controllers
 
             ViewBag.Courses = listViewModel;
 
-
             if (instructor == null)
             {
                 return HttpNotFound();
             }
-            //ViewBag.ID = new SelectList(db.OfficeAssignments, "InstructorID", "Location", instructor.ID);
             return View(instructor);
         }
 
@@ -168,8 +161,6 @@ namespace UnivApp.Controllers
                 .Include(i => i.Courses)
                 .Where(i => i.ID == id)
                 .Single();
-
-            //var ins2 = db.Instructors.Where(i => i.ID == id).Include(i => i.OfficeAssignment).Include(i => i.Courses).Single();
 
             if (TryUpdateModel(instructorToUpdate, "", new string[] { "LastName", "FirstMidName", "HireDate", "OfficeAssignment" }))
             {
@@ -197,7 +188,6 @@ namespace UnivApp.Controllers
             return View(instructorToUpdate);
         }
 
-
         private void UpdateInstructorCourses(string[] selectedCourses, Instructor instructorToUpdate)
         {
             if (selectedCourses == null)
@@ -219,13 +209,12 @@ namespace UnivApp.Controllers
                     if (!hashSetOfInstructorCoursesById.Contains(aCourseFromDb.CourseID))
                     //öğretmenin ders listesinde, bu yeni gelen değer bulunmuyor mu? 
                     //öyleyse veriyi ekle. 
-                    //Diger açıklama aşağıda:
+                    //Diğer açıklama aşağıda:
 
                     // bahsi geçen instructor'un db'deki course'lerinin ID'leri, db'deki herhangi bir course'nin ID sine eşit değil mi?
                     {
                         instructorToUpdate.Courses.Add(aCourseFromDb);
-
-                        //olay şu: db deki bir ID, gelen IDlerden herhangi birine eşit değilse; bu değerin instructora eklenmesi gerekir.
+                        //olan şu: db deki bir ID, gelen IDlerden herhangi birine eşit değilse; bu değerin instructora eklenmesi gerekir.
                     }
                 }
                 else

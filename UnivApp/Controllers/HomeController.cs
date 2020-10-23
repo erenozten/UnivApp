@@ -24,30 +24,26 @@ namespace UnivApp.Controllers
             string actionName = this.ControllerContext.RouteData.Values["action"].ToString();
             string controllerName = this.ControllerContext.RouteData.Values["controller"].ToString();
 
-
-            //var course = new Course { CourseID = 15, Title = "Termodinamik-I", Credits = 3, DepartmentID = db.Departments.FirstOrDefault().DepartmentID};
-            //db.Courses.Add(course);
-            //db.SaveChanges();
             return View();
         }
 
         public ActionResult About()
         {
-            IQueryable<EnrollmentDateGroup> data = from student in db.Students
-                                                   group student by student.EnrollmentDate into dateGroup
-                                                   select new EnrollmentDateGroup()
-                                                   {
-                                                       EnrollmentDate = dateGroup.Key,
-                                                       StudentCount = dateGroup.Count()
-                                                   };
-
+            IQueryable<EnrollmentDateGroup> data =
+                from student in db.Students
+                group student by student.EnrollmentDate
+                into dateGroup
+                select new EnrollmentDateGroup()
+                {
+                    EnrollmentDate = dateGroup.Key,
+                    StudentCount = dateGroup.Count()
+                };
             return View(data.ToList());
         }
 
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
-
             return View();
         }
         protected override void Dispose(bool disposing)

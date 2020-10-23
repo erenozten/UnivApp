@@ -17,32 +17,28 @@ namespace UnivApp.Controllers
     {
         private UnivAppContext db = new UnivAppContext();
 
-        // GET: Department
         public ActionResult Index(int? page)
         {
             var departments = db.Departments.Include(d => d.Administrator);
-
             var departmentsSelected = from s in db.Departments
                 select s;
-
             departmentsSelected = departmentsSelected.OrderBy(d => d.Name);
-
 
             int pageSize = 10;
             int pageNumber = (page ?? 1);
 
             return View(departmentsSelected.ToPagedList(pageNumber, pageSize));
-            //return View(await departments.ToListAsync());
         }
 
-        // GET: Department/Details/5
         public async Task<ActionResult> Details(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
+
             Department department = await db.Departments.FindAsync(id);
+
             if (department == null)
             {
                 return HttpNotFound();
@@ -50,16 +46,12 @@ namespace UnivApp.Controllers
             return View(department);
         }
 
-        // GET: Department/Create
         public ActionResult Create()
         {
             ViewBag.InstructorID = new SelectList(db.Instructors, "ID", "FirstMidName");
             return View();
         }
 
-        // POST: Department/Create
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> Create([Bind(Include = "DepartmentID,Name,Budget,StartDate,InstructorID")] Department department)
@@ -70,12 +62,10 @@ namespace UnivApp.Controllers
                 await db.SaveChangesAsync();
                 return RedirectToAction("Index");
             }
-
             ViewBag.InstructorID = new SelectList(db.Instructors, "ID", "FirstMidName", department.InstructorID);
             return View(department);
         }
 
-        // GET: Department/Edit/5
         public async Task<ActionResult> Edit(int? id)
         {
             if (id == null)
@@ -90,17 +80,12 @@ namespace UnivApp.Controllers
 
             var instructorList = db.Instructors.ToList();
             Instructor inds = new Instructor();
-            //inds.f
 
             ViewBag.InstructorIDBag = new SelectList(db.Instructors, "ID", "FullName", department.InstructorID);
             ViewBag.NewBag = db.Instructors;
-            //ViewBag.newInstructorIDBag = new SelectList(db.Instructors, "ID", "FirstMidName", department.InstructorID);
             return View(department);
         }
 
-        // POST: Department/Edit/5
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> Edit([Bind(Include = "DepartmentID,Name,Budget,StartDate,InstructorID")] Department department)
@@ -130,7 +115,6 @@ namespace UnivApp.Controllers
             return View(department);
         }
 
-        // POST: Department/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> DeleteConfirmed(int id)

@@ -57,6 +57,8 @@
         </div>
     </div>
     <div class="container body-content">
+        @Styles.Render("~/bundles/css")
+        @Styles.Render("~/bundles/cssMine")
         @RenderBody()
         <hr />
         <footer>
@@ -70,8 +72,8 @@
     @Scripts.Render("~/bundles/myScriptsBundle")
 
     @*@Styles.Render("~/bundles/cssNew")*@
-    @Styles.Render("~/bundles/css")
-    @Styles.Render("~/bundles/cssMine")
+    @*@Styles.Render("~/bundles/css")
+    @Styles.Render("~/bundles/cssMine")*@
     @RenderSection("scripts", required: false)
 </body>
 

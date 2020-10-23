@@ -17,27 +17,20 @@ namespace UnivApp.Controllers
     {
         private UnivAppContext db = new UnivAppContext();
 
-        // GET: Enrollment
         public ActionResult Index(int? page)
         {
-            // enrollment'lara ait olan course'ları ve student'ları eager load yaptık.Eager loading enrollments' courses and students.
             var enrollments = db.Enrollments.Include(e => e.Course).Include(e => e.Student);
-            
 
             var enrollmentsSelected = from s in db.Enrollments
                 select s;
             enrollmentsSelected = enrollmentsSelected.OrderByDescending(c => c.EnrollmentID);
 
-
             int pageSize = 10;
             int pageNumber = (page ?? 1);
-
-            //enrollmentsSelected = enrollmentsSelected.OrderBy(d => d.);
 
             return View(enrollmentsSelected.ToPagedList(pageNumber, pageSize));
         }
 
-        // GET: Enrollment/Details/5
         public async Task<ActionResult> Details(int? id)
         {
             if (id == null)
@@ -52,7 +45,6 @@ namespace UnivApp.Controllers
             return View(enrollment);
         }
 
-        // GET: Enrollment/Create
         public ActionResult Create()
         {
             ViewBag.CourseID = new SelectList(db.Courses, "CourseID", "Title");
@@ -60,9 +52,6 @@ namespace UnivApp.Controllers
             return View();
         }
 
-        // POST: Enrollment/Create
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> Create([Bind(Include = "EnrollmentID,CourseID,StudentID," +
@@ -79,7 +68,6 @@ namespace UnivApp.Controllers
                     var course = db.Courses.Find(enrollment.CourseID);
                     var student = db.Students.Find(enrollment.StudentID);
 
-
                     //db.Enrollments.Where(e => e.CourseID == newEnrollmentCourseId);
                     //db.Enrollments.Where(e => e.StudentID == newEnrollmentStudentId);
 
@@ -91,7 +79,6 @@ namespace UnivApp.Controllers
                             ViewBag.StudentID = new SelectList(db.People, "ID", "FullName");
                             string errorMessage = "Error. " + student.FullName + " has already an enrollment for " + course.Title;
                             ViewBag.errorForCreateEnrollment = errorMessage;
-                            //ViewBag.errorForCreateEnrollment = ("Error. ");
                             return View(enrollment);
                         }
                     }
@@ -106,7 +93,6 @@ namespace UnivApp.Controllers
             return View(enrollment);
         }
 
-        // GET: Enrollment/Edit/5
         public async Task<ActionResult> Edit(int? id)
         {
             if (id == null)
@@ -123,9 +109,6 @@ namespace UnivApp.Controllers
             return View(enrollment);
         }
 
-        // POST: Enrollment/Edit/5
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> Edit([Bind(Include = "EnrollmentID,CourseID,StudentID,Grade")] Enrollment enrollment)
@@ -141,7 +124,6 @@ namespace UnivApp.Controllers
             return View(enrollment);
         }
 
-        // GET: Enrollment/Delete/5
         public async Task<ActionResult> Delete(int? id)
         {
             if (id == null)
