@@ -36,7 +36,7 @@
             @Html.DisplayNameFor(model => model.Courses)
         </dt>
         <dd>
-            @{ {
+            @{{
                     int number = 0;
                     int numberCourseCount = Model.Courses.Count;
 
@@ -46,7 +46,7 @@
                         if (number == 1) /* en başa yazılan text için kullanılıyor */
                         {
     @: Toplam @Html.DisplayFor(model => model.Courses.Count) ders bulundu:
-}
+                        }
 
 }
 } }

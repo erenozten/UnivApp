@@ -19,7 +19,6 @@ namespace UnivApp
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
-
         }
         public static void Register(HttpConfiguration config)
         {
