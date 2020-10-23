@@ -1,0 +1,6 @@
+static/* linguist-vendored
+platforms/* linguist-vendored=true
+plugins/* linguist-vendored=true
+public/* linguist-vendored=true
+# Auto detect text files and perform LF normalization
+* text=auto

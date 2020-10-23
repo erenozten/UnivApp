@@ -1,0 +1,91 @@
+﻿@using System.Web.UI.WebControls
+@using UnivApp.DAL
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+
+    <script src="~/Scripts/bootstrap.min.js"></script>
+
+    <script src="~/Scripts/jquery-3.3.1.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    <script src="~/Scripts/Scripts.js"></script>
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    <script src="~/Content/alertifyjs/alertify.min.js"></script>
+    <link href="~/Content/alertifyjs/alertify.min.css" rel="stylesheet" />
+    <script src="~/Scripts/alertify.js"></script>
+    <link href="~/Content/SiteUnivApp.css" rel="stylesheet" />
+    <title>@ViewBag.Title - UnivApp Application Hi</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            @{
+                ViewBag.bagForController = @HttpContext.Current.Request.RequestContext.RouteData.Values["controller"].ToString();
+                ViewBag.bagForAction = @ViewContext.RouteData.GetRequiredString("action");
+                ViewBag.bagForControllerAndAction = (ViewBag.bagForController.ToString() + "/" + ViewBag.bagForAction);
+            }
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="@(ViewBag.bagForController == "Home" ? "active" : "")">@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li class="@(ViewBag.bagForController == "Student" ? "active" : "")">@Html.ActionLink("Students", "Index", "Student")</li>
+                    <li class="@(ViewBag.bagForController == "Courses" ? "active" : "")">@Html.ActionLink("Courses", "Index", "Courses")</li>
+                    <li class="@(ViewBag.bagForController == "Instructor" ? "active" : "")">@Html.ActionLink("Instructors", "Index", "Instructor")</li>
+                    <li class="@(ViewBag.bagForController == "Department" ? "active" : "")">@Html.ActionLink("Departments", "Index", "Department")</li>
+                    <li class="@(ViewBag.bagForController == "Enrollment" ? "active" : "")">@Html.ActionLink("Enrollments", "Index", "Enrollment")</li>
+                    <li class="@(ViewBag.bagForController == "OfficeAssignment" ? "active" : "")">@Html.ActionLink("Office Assignments", "Index", "OfficeAssignment")</li>
+                    <li class="@(ViewBag.bagForController == "Tests" ? "active" : "")">@Html.ActionLink("Tests", "Index", "Tests")</li>
+                    <li class="@(ViewBag.bagForController == "ModalBox" ? "active" : "")">@Html.ActionLink("ModalBox", "Index", "ModalBox")</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - Univapp</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/Content/css")
+    @Scripts.Render("~/bundles/myScriptsBundle")
+
+    @*@Styles.Render("~/bundles/cssNew")*@
+    @Styles.Render("~/bundles/css")
+    @Styles.Render("~/bundles/cssMine")
+    @RenderSection("scripts", required: false)
+</body>
+
+
+<div class="footer i-footer" style="display:table">
+    <div class="i-color-white i-text-align-right i-font-weight-bold
+                     i-display-table-cell i-vertical-align"
+         style="display: table-cell; vertical-align: middle;">
+        @HttpContext.Current.Request.RequestContext.RouteData.Values["controller"].ToString()
+        /
+        @ViewContext.RouteData.GetRequiredString("action")
+        /
+        @Url.RequestContext.RouteData.Values["id"] &nbsp &nbsp &nbsp
+    </div>
+</div>
+
+</html>
