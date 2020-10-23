@@ -18,8 +18,6 @@ namespace UnivApp.Controllers
     {
         private UnivAppContext db = new UnivAppContext();
 
-        //private UnitOfWork unitofwork;
-
         public ActionResult Index(string sortOrder, string currentFilter, string searchString, int? page)
         {
             ViewBag.FirstNameSortParm = sortOrder == "firstName_desc" ? "firstName_asc" : "firstName_desc";
@@ -127,8 +125,6 @@ namespace UnivApp.Controllers
 
         [HttpPost]
         public ActionResult CreateWithJson(string FirstMidName, string LastName, DateTime EnrollmentDate)
-        //public JsonResult CreateWithJson(string FirstMidName, string LastName, DateTime EnrollmentDate)
-        // ikisi de istendiği gibi çalışıyor. How?
         {
             var student = new Student();
             try
@@ -146,7 +142,6 @@ namespace UnivApp.Controllers
             catch (Exception e)
             {
                 Console.WriteLine(e);
-                //throw ;
             }
           
             return Json(student, JsonRequestBehavior.AllowGet);

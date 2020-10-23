@@ -28,7 +28,7 @@ namespace UnivApp.Controllers
             return "ssdf";
         }
 
-        // GET: api/StudentsApi/5           api/StudentsApi/GetStudent/5
+        // GET: api/StudentsApi/5     
         [ResponseType(typeof(Student))]
         public IHttpActionResult GetStudent(int id)
         {
