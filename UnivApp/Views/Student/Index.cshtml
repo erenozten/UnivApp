@@ -29,8 +29,6 @@
         </th>
     </tr>
 
-
-
     @foreach (var item in Model)
     {
 
@@ -56,13 +54,10 @@
                     </span> <span class="btn-group">
                         @Html.ActionLink("Details", "Details", new { id = item.ID }, new { @class = "button" })
                     </span>
-
-
                     <span class="btn-group">
                         <input type="submit" class="button" value="Delete"
                                onclick="return confirm('Are you sure want to delete record with ID = @item.ID')">
                     </span>
-
                     <span class="btn-group checkBoxForStudents">
                         &nbsp;&nbsp;<input type="checkbox" name="selectedStudentsReturnedToAction" id="@item.ID" value="@item.ID">
                         <label for="@item.ID" style="color:white;">---------------</label>
@@ -72,7 +67,6 @@
         }
     }
 </table>
-
 
 <style>
     .checkBoxForStudents {
@@ -92,7 +86,6 @@
         transition: opacity 0.3s linear;
     }
 </style>
-
 
 Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
 

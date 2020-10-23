@@ -1,9 +1,6 @@
 ﻿@model IEnumerable<UnivApp.ViewModels.EnrollmentDateGroup>
 <h2>Tests</h2>
 <br />
-
-<style>
-</style>
 @Html.ActionLink("JSON ile Database'e veri eklemek için tıklayınız.", "Create", "Student")
 <br />
 JSON ile Database'deki veriyi getirme işlemi için aşağı ininiz.
@@ -15,8 +12,6 @@ JSON ile Database'deki veriyi getirme işlemi için aşağı ininiz.
 @*<button type="button" style="color: white; background-color:yellowgreen" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" id="modalId">
     Launch demo modal
 </button>*@
-
-
 
 <h3>Student Body Statistics</h3>
 
@@ -52,6 +47,7 @@ JSON ile Database'deki veriyi getirme işlemi için aşağı ininiz.
         <br />
         <input class="btn btn-default " type="submit" id="GetStudent" value="Get the Student" />
     </div>
+
     <div>
         <br />
         <p>Name : <strong id="studentFirstMidNameId"></strong></p>
@@ -61,15 +57,11 @@ JSON ile Database'deki veriyi getirme işlemi için aşağı ininiz.
 
     <a id="hrefId" href="empty"> </a>
     <span id="spanForNotFound"> </span>
-
-
     <a id="hrefId" href="empty">
         @*<span>link</span>*@ &nbsp;
     </a>
-
     <span id="spanForUserNotFound"></span>
 </div>
-
 
 <style>
     .btn-primary {
