@@ -109,20 +109,6 @@ namespace UnivApp.Controllers
             return View();
         }
 
-        //[HttpPost]
-        //public ActionResult Index(string[] selectedStudentsReturnedToAction)
-        //{
-
-        //    return RedirectToAction("Index", "Student");
-        //}
-
-        //[HttpPost]
-        //public ActionResult DeleteCheckboxedStudents(int id, string[] selectedStudentsReturnedToAction)
-        //{
-
-        //    return RedirectToAction("Index", "Student");
-        //}
-
         [HttpPost]
         public ActionResult CreateWithJson(string FirstMidName, string LastName, DateTime EnrollmentDate)
         {

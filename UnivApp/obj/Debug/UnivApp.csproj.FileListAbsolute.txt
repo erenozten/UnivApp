@@ -465,10 +465,10 @@ C:\Users\Primal Shade\source\repos\UnivApp\UnivApp\bin\Antlr3.Runtime.pdb
 C:\Users\Primal Shade\source\repos\UnivApp\UnivApp\bin\System.Diagnostics.DiagnosticSource.xml
 C:\Users\Primal Shade\source\repos\UnivApp\UnivApp\bin\Microsoft.AspNet.TelemetryCorrelation.xml
 C:\Users\Primal Shade\source\repos\UnivApp\UnivApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\Primal Shade\source\repos\UnivApp\UnivApp\obj\Debug\UnivApp.csprojAssemblyReference.cache
 C:\Users\Primal Shade\source\repos\UnivApp\UnivApp\obj\Debug\UnivApp.Migrations.X.resources
 C:\Users\Primal Shade\source\repos\UnivApp\UnivApp\obj\Debug\UnivApp.csproj.GenerateResource.cache
 C:\Users\Primal Shade\source\repos\UnivApp\UnivApp\obj\Debug\UnivApp.csproj.CoreCompileInputs.cache
 C:\Users\Primal Shade\source\repos\UnivApp\UnivApp\obj\Debug\UnivApp.csproj.CopyComplete
 C:\Users\Primal Shade\source\repos\UnivApp\UnivApp\obj\Debug\UnivApp.dll
 C:\Users\Primal Shade\source\repos\UnivApp\UnivApp\obj\Debug\UnivApp.pdb
+C:\Users\Primal Shade\source\repos\UnivApp\UnivApp\obj\Debug\UnivApp.csproj.AssemblyReference.cache

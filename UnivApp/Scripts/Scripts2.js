@@ -43,15 +43,15 @@ $(document).ready(function () {
             $(tableRadioButtons).css('pointer-events', 'none');
             return;
         }
-        debugger;
+        //debugger;
         populateRadioButtons(); 
-        debugger;
+        //debugger;
 
     });
 
     function populateRadioButtons() {
         var instructorIdFromDropDown = $(dropDownListForInstructor).children("option:selected").val();
-        debugger;
+        //debugger;
         function executeAjax() {
             $.ajax(
                 {
@@ -78,7 +78,7 @@ $(document).ready(function () {
                     },
                     error: function (data) {
                         alertify.error("Bir şeyler ters gitti!!!");
-                        debugger;
+                        //debugger;
                         $(ballGreenForSelectInstructor).removeClass("ballGreen");
                         $(dropDownListForInstructor).prop("disabled", false);
                     }
@@ -127,7 +127,8 @@ $(document).ready(function () {
     };
 
     $(buttonsaveRadioButtonCourses).click(function () {
-        $(ballGreenForSaveRadioButtonCoursesId).addClass("ballGreen1"); 
+        $(
+            reenForSaveRadioButtonCoursesId).addClass("ballGreen1"); 
         $(buttonsaveRadioButtonCourses).prop("disabled", true);
         window.setTimeout(saveRadioButtonCoursesJquery, 1000);
     });
@@ -188,7 +189,7 @@ $(document).ready(function () {
             $(buttonCreateInstructorWithForm).css({ opacity: 0 });
             $("#divForNewForm").empty();
             $(buttonCreateInstructorWithForm).css('pointer-events', 'none');
-            debugger;
+            //debugger;
         }
     });
 
